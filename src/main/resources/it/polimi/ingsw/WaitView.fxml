@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" styleClass="vbox" stylesheets="@CSS/Welcome_style.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="it.polimi.ingsw.Client.GUI.WelcomeController">
+   <children>
+      <VBox id="vbox_shadow" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" stylesheets="@CSS/Welcome_style.css">
+         <children>
+            <Label alignment="TOP_CENTER" text="Welcome to Santorini GUI Version" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="898.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="693.0000305175781" minWidth="10.0" prefWidth="422.6" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="112.8" minHeight="10.0" prefHeight="112.8" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="211.40002479553223" minHeight="10.0" prefHeight="113.2" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="211.40002479553223" minHeight="10.0" prefHeight="117.60000000000002" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ProgressIndicator GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <Label prefHeight="124.0" prefWidth="898.0" text="Wait for other players to join while we are checking your nickname availability" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</VBox>

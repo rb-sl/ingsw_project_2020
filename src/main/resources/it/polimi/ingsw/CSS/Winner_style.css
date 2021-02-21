@@ -1,0 +1,19 @@
+.anchor-pane {
+    -fx-background-image: url("../Images/EndGame/Victory.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.button {
+    -fx-background-color: rgba(47, 109, 149, 1);
+}

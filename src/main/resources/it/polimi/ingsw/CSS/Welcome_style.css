@@ -1,0 +1,30 @@
+@import "Root.css";
+.vbox {
+    -fx-background-image: url("../Images/Welcome_bg.png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.label, .combo-box {
+    -fx-font-family: 'LillyBelle';
+}
+#vbox_shadow {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-effect: dropshadow(gaussian, blue, 50, 0, 0, 0);
+    -fx-background-insets: 50;
+    -fx-border-color: transparent;
+}
+
+.split-pane:vertical > .split-pane-divider {
+   -fx-background-color: transparent;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+   -fx-background-color: transparent;
+}
+
+.progress-indicator {
+    -fx-accent: white;
+}
+

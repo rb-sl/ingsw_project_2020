@@ -1,0 +1,34 @@
+@import "Root.css";
+.vbox {
+    -fx-background-image: url("../Images/God_bg.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-background-repeat: stretch;
+}
+
+.label {
+    -fx-font-family: 'LillyBelle';
+}
+
+.button {
+    -fx-font-family: 'LillyBelle';
+}
+
+.image-view {
+    -fx-background-image: url("../Images/Workers/Panel.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-background-repeat: stretch;
+}
+
+#btn_female {
+    -fx-background-color: rgba(237, 229, 214, 1);
+    -fx-font-family: 'LillyBelle';
+    -fx-font-size: 26;
+}
+
+#btn_male {
+    -fx-background-color: rgba(237, 229, 214, 1);
+    -fx-font-family: 'LillyBelle';
+    -fx-font-size: 26;
+}

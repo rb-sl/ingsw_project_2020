@@ -1,0 +1,110 @@
+[
+  {
+    "section": "How to play",
+    "text": "Players take turns, starting with the Start Player, who first placed their Workers. On your turn, select one of your Workers. You must move and then build with the selected Worker.",
+    "subsections": [
+      {
+        "section": "Move",
+        "text": "Move your selected Worker into one of the (up to) eight neighboring spaces.\nA Worker may move up a maximum of one level higher, move down any number of levels lower, or move along the same level. A Worker may not move up more than one level.\nThe space your Worker moves into must be unoccupied (not containing a Worker or a Dome)."
+      },
+      {
+        "section": "Build",
+        "text": "Build a block or dome on an unoccupied space neighboring the moved Worker.\nYou can build onto a level of any height, but you must choose the correct shape of block or dome for the level being built. A tower with 3 blocks and a dome is considered a \"Complete Tower\""
+      }
+    ]
+  },
+  {
+    "section": "Winning the Game",
+    "text": "If one of your Workers moves up on top of level 3 during your turn, you instantly win!\nYou must always perform a move then build on your turn. If you are unable to, you lose; if a player loses in a 3-player game, their Workers and God Power are removed from the game"
+  },
+  {
+    "section": "God Powers",
+    "text": "God Powers are cards that provide you with a powerful ability that can be used throughout the game. Many God Powers change the way Workers move and build.",
+    "subsections": [
+      {
+        "section": "God Power setup",
+        "text": "The game chooses the Challenger and God Powers equal to the number of players. Starting from the next player, everyone chooses a God Power (the Challenger receives the last one).\nThen the challenger chooses a Start Player, who places 2 Workers on any unoccupied spaces on the board. In order, the other players each place all of their Workers."
+      },
+      {
+        "section": "Using God Powers",
+        "subsections": [
+          {
+            "section": "Normal rules",
+            "text": "Normal rules and conditions still apply to you when using a God Power, with the exception of the specific changes described by the God Power."
+          },
+          {
+            "section": "Obligations",
+            "text": "You must obey all God Power text that says you \"cannot\" or \"must\", otherwise you lose the game."
+          },
+          {
+            "section": "Blocks",
+            "text": "Domes are not blocks. If the God Power description states it affects blocks, it does not affect domes."
+          },
+          {
+            "section": "Move and force",
+            "text": "\"Forced\" is not \"Moved\". Some God Powers may cause Workers to be \"forced\" into another space. A Worker that is forced, is not considered to have moved. Remember: to win the game by moving onto the third level, your Worker must move up during your turn. Therefore, if your Worker is Forced onto the third level, you do not win the game. Moving from one third level space tp another also does not trigger a win."
+          },
+          {
+            "section": "Applications",
+            "text": "God Powers apply or are triggered at a specific time, according to what is stated at the start in the God Power's description."
+          },
+          {
+            "section": "Additional Win Conditions",
+            "text": "Additional Win Conditions are specified by some God Powers. In addition to being able to win by moving up onto the third level during your turn, you can also win by fulfilling the \"Win Condition\" described."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "God Powers in the game",
+    "text": "Hover over the gods' images (GUI) or read the description under the board (CLI) to know about the powers being active in the game."
+  },
+  {
+    "section": "Glossary",
+    "subsections": [
+      {
+        "section": "Block",
+        "text": "A part of a tower and forms a space on the board. When you build, place blocks from larger to smaller to stack them."
+      },
+      {
+        "section": "Complete Tower",
+        "text": "Consists of exactly three blocks and a dome"
+      },
+      {
+        "section": "Dome",
+        "text": "The top level on a Tower. Domes cannot have anything placed upon them. A dome may only be built on top of the third level, unless otherwise specified by a God Power."
+      },
+      {
+        "section": "Neighboring",
+        "text": "Each space has up to eight spaces surrounding it. These are called its neighboring spaces."
+      },
+      {
+        "section": "Occupied Space",
+        "text": "A space containing a Worker or a Dome."
+      },
+      {
+        "section": "Perimeter Space",
+        "text": "One of the 16 spaces along the edge of the board."
+      },
+      {
+        "section": "Unmoved Worker",
+        "text": "A Worker that did not move on your turn."
+      },
+      {
+        "section": "Unoccupied Space",
+        "text": "A space not containing a Worker or a Dome."
+      }
+    ]
+  },
+  {
+    "section": "Credits",
+    "text": "Game Design: Gordon Hamilton aka Dr. Pickle. For more puzzles, games and unsolved problems, visit mathpickle.com\nBeautiful Artwork: David Forest & Lina Cossette (mrcuddington.com)\nProduct / Graphic design: Gavan Brown\nBrilliant Rule Book Editors: Michael Van Biesbrouck, Simon Rourke, Lee Mitchell, Richard Castle, Mario Radmilovic, Patrick Dombrowski, Duncan Hecht, Paul Saxberg\nKey Playtesters: Charles Ursenbach, Matt Tolman, Michael Van Biesbrouck, Paul Saxberg, Joe McDaid, Jim Drinkle\nApp Development: Stefano Giugliano\nTutorial Videos: Joe McDaid\nDevelopment Contributions: Michael Van Biesbrouck (Adonis, Jason, Hestia), Simon Rourke (Europa and Talus), Joe McDaid (Golden Fleece variant), Keefer Hamilton (Hephaestus), Arya Asakura (Hera), Paul Saxberg (Chaos, Moerae), Will Fordham (Odysseus), Matt Tolman (Zeus)",
+    "subsections": [
+      {
+        "section": "Project development",
+        "text": "This project has been developed as Software Engineering Project at Politecnico di Milano during the degree in Computer Science and Engineering\nCopyright by Roxley (roxley.com), Spin Master"
+      }
+    ]
+  }
+]

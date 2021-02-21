@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" styleClass="vbox" stylesheets="@CSS/Preloader_style.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+   <children>
+      <ProgressBar fx:id="loadProgress" prefHeight="42.0" prefWidth="463.0" progress="0.0">
+         <VBox.margin>
+            <Insets bottom="50.0" />
+         </VBox.margin>
+      </ProgressBar>
+   </children>
+</VBox>

@@ -1,0 +1,166 @@
+@import "Root.css";
+
+.hbox {
+    -fx-background-image: url("../Images/SantoriniBoard3.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1200 700;
+    -fx-background-position: center center;
+}
+
+.label {
+    -fx-font-family: 'LillyBelle';
+    -fx-font-size: 23;
+}
+
+#lbl_nickname {
+    -fx-font-family: 'LillyBelle';
+    -fx-font-size: 20;
+}
+
+
+.button {
+    -fx-font-family: 'LillyBelle';
+}
+
+#vbox_right {
+    -fx-background-image: url("../Images/backpanel.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+
+#vbox_left {
+    -fx-background-image: url("../Images/backpanel.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+
+#btn_level1 {
+    -fx-background-image: url("../Images/Blocks/Level1.png");
+    -fx-background-color: transparent;
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-border-color: transparent;
+    -fx-border-size: 10px;
+    -fx-border-style: SOLID;
+}
+
+#btn_level1:pressed {
+    -fx-border-color: magenta;
+    -fx-border-width: 3;
+    -fx-border-style: SOLID;
+}
+
+#btn_level2 {
+    -fx-background-image: url("../Images/Blocks/Level2.png");
+    -fx-background-color: transparent;
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-border-color: transparent;
+    -fx-border-size: 10px;
+    -fx-border-style: SOLID;
+}
+#btn_level2:pressed {
+    -fx-border-color: magenta;
+    -fx-border-width: 3;
+    -fx-border-style: SOLID;
+}
+
+#btn_level3 {
+    -fx-background-image: url("../Images/Blocks/Level3.png");
+    -fx-background-color: transparent;
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-border-color: transparent;
+    -fx-border-size: 10px;
+    -fx-border-style: SOLID;
+}
+
+#btn_level3:pressed {
+    -fx-border-color: magenta;
+    -fx-border-width: 3;
+    -fx-border-style: SOLID;
+}
+
+#btn_dome {
+    -fx-background-image: url("../Images/Blocks/Dome.png");
+    -fx-background-color: transparent;
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-border-color: transparent;
+    -fx-border-size: 10px;
+    -fx-border-style: SOLID;
+}
+
+#btn_dome:pressed {
+    -fx-border-color: magenta;
+    -fx-border-width: 3;
+    -fx-border-style: SOLID;
+}
+
+#btn_undo {
+    -fx-background-image: url("../Images/Buttons/btn_blue.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-color: transparent;
+    -fx-font-family: 'LillyBelle';
+    -fx-font-size: 23;
+}
+
+#btn_undo:pressed {
+    -fx-background-image: url("../Images/Buttons/btn_blue_pressed.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-color: transparent;
+}
+#btn_pass {
+    -fx-background-image: url("../Images/Buttons/btn_stone.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-color: transparent;
+    -fx-font-family: 'LillyBelle';
+    -fx-font-size: 21;
+}
+
+#btn_pass:pressed {
+    -fx-background-image: url("../Images/Buttons/btn_stone_pressed.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-color: transparent;
+}
+#btn_help {
+    -fx-background-image: url("../Images/Buttons/btn_stone.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-color: transparent;
+    -fx-font-family: 'LillyBelle';
+    -fx-font-size: 21;
+}
+
+#btn_help:pressed {
+    -fx-background-image: url("../Images/Buttons/btn_stone_pressed.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-color: transparent;
+}
+
+.list-view {
+    -fx-background-color: radial-gradient(focus-angle 180deg, focus-distance 0%, center 50% 50%, radius 100%, rgba(138,119,102,0.5) 0%, rgba(221,209,197,0) 100%);
+    -fx-border-style: solid none solid none;
+    -fx-border-width: 2;
+    -fx-border-color: #8A7766;
+}
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 10 0 10 0;
+}
+
+.tile-pane {
+    -fx-background-color: radial-gradient(focus-angle 180deg, focus-distance 0%, center 50% 50%, radius 100%, rgba(138,119,102,0.5) 0%, rgba(221,209,197,0) 100%);
+    -fx-border-style: solid none solid none;
+    -fx-border-width: 2;
+    -fx-border-color: #8A7766;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}

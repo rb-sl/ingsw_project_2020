@@ -1,0 +1,6 @@
+{
+	"nRow": 5,
+	"nCol": 5,
+	"workersPerPlayer": 2,
+	"workerSex" : ["F", "M"]
+}

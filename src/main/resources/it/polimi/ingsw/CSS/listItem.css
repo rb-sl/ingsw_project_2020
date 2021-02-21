@@ -1,0 +1,7 @@
+#cell_hbox {
+    -fx-background-color: transparent;
+}
+
+#cell_hbox:hover {
+    -fx-background-color: white;
+}

@@ -1,0 +1,5 @@
+.vbox {
+    -fx-background-image: url("../Images/Loader.bmp");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+}

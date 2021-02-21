@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="hbox" stylesheets="@CSS/Board_style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.Client.GUI.BoardController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="NEVER" maxWidth="262.0" minWidth="10.0" prefWidth="262.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="754.0" minWidth="10.0" prefWidth="672.6000366210938" />
+    <ColumnConstraints hgrow="NEVER" maxWidth="329.5999511726219" minWidth="10.0" prefWidth="262.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane GridPane.columnIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="228.4" minHeight="0.0" prefHeight="78.4" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="579.2" minHeight="10.0" prefHeight="557.5999877929687" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="124.39999999999998" minHeight="10.0" prefHeight="64.80001220703127" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane id="grid_board" fx:id="grid_board" hgap="5.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#onClickBoard" prefHeight="516.0" prefWidth="480.0" vgap="5.0" GridPane.rowIndex="1">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <GridPane.margin>
+                  <Insets bottom="25.0" left="92.0" right="92.0" top="20.0" />
+               </GridPane.margin>
+               <children>
+                  </children>
+               <stylesheets>
+                  <URL value="@CSS/Board_style.css" />
+               </stylesheets>
+            </GridPane>
+            <Button id="btn_undo" fx:id="btn_undo" alignment="CENTER" disable="true" mnemonicParsing="false" onMouseClicked="#onClickUndo" prefHeight="50.0" prefWidth="300.0" stylesheets="@CSS/Board_style.css" text="UNDO ACTION" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </Button>
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+               <content>
+                  <TextFlow fx:id="text_info" textAlignment="CENTER" />
+               </content>
+            </ScrollPane>
+         </children>
+      </GridPane>
+      <VBox id="vbox_right" alignment="CENTER" centerShape="false" prefHeight="200.0" prefWidth="100.0" scaleShape="false" stylesheets="@CSS/Board_style.css" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+         <children>
+            <GridPane prefHeight="700.0" prefWidth="247.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="345.4" minHeight="10.0" prefHeight="100.99999237060547" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="345.4" minHeight="10.0" prefHeight="90.79999389648438" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="345.4" minHeight="10.0" prefHeight="156.40000610351564" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="619.3999572753905" minHeight="10.0" prefHeight="267.39998779296883" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="475.7999816894532" minHeight="10.0" prefHeight="89.80001220703127" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TilePane alignment="CENTER" hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="264.0" prefWidth="199.0" styleClass="tile-pane" stylesheets="@CSS/Board_style.css" vgap="5.0" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3">
+                     <children>
+                        <Button id="btn_level1" fx:id="btn_level1" alignment="CENTER" disable="true" mnemonicParsing="false" onMouseClicked="#onClickLevel1" prefHeight="90.0" prefWidth="90.0" stylesheets="@CSS/Board_style.css">
+                           <TilePane.margin>
+                              <Insets />
+                           </TilePane.margin></Button>
+                        <Button id="btn_level3" fx:id="btn_level3" disable="true" mnemonicParsing="false" onMouseClicked="#onClickLevel3" prefHeight="90.0" prefWidth="90.0">
+                           <TilePane.margin>
+                              <Insets />
+                           </TilePane.margin></Button>
+                        <Button id="btn_level2" fx:id="btn_level2" disable="true" mnemonicParsing="false" onMouseClicked="#onClickLevel2" prefHeight="90.0" prefWidth="90.0">
+                           <TilePane.margin>
+                              <Insets />
+                           </TilePane.margin></Button>
+                        <Button id="btn_dome" fx:id="btn_dome" disable="true" mnemonicParsing="false" onMouseClicked="#onClickDome" prefHeight="90.0" prefWidth="90.0" stylesheets="@CSS/Board_style.css">
+                           <TilePane.margin>
+                              <Insets />
+                           </TilePane.margin></Button>
+                     </children>
+                     <GridPane.margin>
+                        <Insets left="3.0" right="2.0" />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="15.0" left="10.0" top="15.0" />
+                     </padding>
+                  </TilePane>
+                  <Button id="btn_pass" fx:id="btn_pass" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" onMouseClicked="#onClickPass" prefHeight="50.0" prefWidth="195.0" text="PASS" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets left="3.0" top="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button id="btn_help" fx:id="btn_help" mnemonicParsing="false" onMouseClicked="#onHelpClick" prefHeight="54.0" prefWidth="191.0" text="HELP" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="21.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="3.0" />
+                     </GridPane.margin></Button>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <VBox id="vbox_left" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" stylesheets="@CSS/Board_style.css" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="228.60001220703126" minHeight="0.0" prefHeight="83.8" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="577.6" minHeight="10.0" prefHeight="275.8000122070313" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="376.4000061035157" minHeight="10.0" prefHeight="251.7999877929688" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="329.200048828125" minHeight="10.0" prefHeight="90.79999999999995" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                   <VBox alignment="CENTER" prefHeight="287.0" prefWidth="233.0" spacing="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                       <children>
+                           <Button fx:id="btn_image" alignment="CENTER" mnemonicParsing="false" prefHeight="228.0" prefWidth="187.0" textAlignment="CENTER" wrapText="true">
+                               <VBox.margin>
+                                   <Insets top="20.0" />
+                               </VBox.margin>
+                               <font>
+                                   <Font name="Gill Sans Nova Ultra Bold" size="12.0" />
+                               </font>
+                               <tooltip>
+                                   <Tooltip fx:id="tooltip_img" />
+                               </tooltip>
+                           </Button>
+                           <ScrollPane prefHeight="120.0" prefWidth="233.0" stylesheets="@CSS/Board_style.css" vbarPolicy="NEVER">
+                               <styleClass>
+                                   <String fx:value="scroll-pane" />
+                                   <String fx:value="viewport" />
+                               </styleClass>
+                               <content>
+                                   <Label fx:id="lbl_nickname" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" text="PLAYER NAME" textAlignment="CENTER" textFill="#cfb3ca" wrapText="true">
+                                       <font>
+                                           <Font name="Gill Sans Ultra Bold" size="17.0" />
+                                       </font>
+                                       <effect>
+                                           <DropShadow />
+                                       </effect>
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                                   </Label>
+                               </content>
+                               <padding>
+                                   <Insets left="20.0" right="20.0" />
+                               </padding>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           </ScrollPane>
+                       </children>
+                       <GridPane.margin>
+                           <Insets left="30.0" right="30.0" />
+                       </GridPane.margin>
+                   </VBox>
+                  <ListView fx:id="lv_players" prefHeight="271.0" prefWidth="190.0" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <GridPane.margin>
+                        <Insets left="32.0" right="31.0" />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets left="3.0" right="3.0" top="5.0" />
+                     </padding>
+                  </ListView>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</GridPane>

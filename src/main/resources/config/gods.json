@@ -1,0 +1,354 @@
+{
+    "Apollo": {
+        "godName": "Apollo",
+        "description": "God of music\nYour move: Your Worker may move into an opponent Worker's space by forcing their worker to the space yours just vacated",
+        "movableTimes": 1,
+        "buildableTimes": 1,
+        "events": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "movements": {
+            "SELF": [
+                "CanMoveAndBuild",
+                "MoveOnOpponent",
+                "Swap"
+            ],
+            "OPPONENTS": []
+        },
+        "builds": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "wins": {
+            "SELF": [],
+            "OPPONENTS": []
+        }
+    },
+    "Artemis": {
+        "godName": "Artemis",
+        "description": "Goddess of the Hunt\nYour Move: Your Worker may move one additional time, but not back to its initial space.",
+        "movableTimes": 2,
+        "buildableTimes": 1,
+        "events": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "movements": {
+            "SELF": [
+                "NotOnPreviousPosition"
+            ],
+            "OPPONENTS": []
+        },
+        "builds": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "wins": {
+            "SELF": [],
+            "OPPONENTS": []
+        }
+    },
+    "Athena": {
+        "godName": "Athena",
+        "description": "Goddess of Wisdom\nOpponent's turn: If one of your Workers moved up on your last turn, opponent Workers cannot move up this turn",
+        "movableTimes": 1,
+        "buildableTimes": 1,
+        "events": {
+            "SELF": [],
+            "OPPONENTS": [
+                "CantMoveUp"
+            ]
+        },
+        "movements": {
+            "SELF": [
+                "InhibitMoveUp"
+            ],
+            "OPPONENTS": [
+                "CantMoveUp"
+            ]
+        },
+        "builds": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "wins": {
+            "SELF": [],
+            "OPPONENTS": []
+        }
+    },
+    "Atlas": {
+        "godName": "Atlas",
+        "description": "Titan shouldering the Heavens\nYour Build: Your Worker may build a dome at any level.",
+        "movableTimes": 1,
+        "buildableTimes": 1,
+        "events": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "movements": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "builds": {
+            "SELF": [
+                "DomeEverywhere"
+            ],
+            "OPPONENTS": []
+        },
+        "wins": {
+            "SELF": [],
+            "OPPONENTS": []
+        }
+    },
+    "Demeter": {
+        "godName": "Demeter",
+        "description": "Goddess of the Harvest\nYour Build: Your Worker may build one additional time, but not on the same space.",
+        "movableTimes": 1,
+        "buildableTimes": 2,
+        "events": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "movements": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "builds": {
+            "SELF": [
+                "NotOnPreviousBuild"
+            ],
+            "OPPONENTS": []
+        },
+        "wins": {
+            "SELF": [],
+            "OPPONENTS": []
+        }
+    },
+    "Hephaestus": {
+        "godName": "Hephaestus",
+        "description": "God of Blacksmiths\nYour Build: Your Worker may build one additional block (not dome) on top of your first block.",
+        "movableTimes": 1,
+        "buildableTimes": 2,
+        "events": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "movements": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "builds": {
+            "SELF": [
+                "NoDomeOnSecond",
+                "OnPreviousBuild"
+            ],
+            "OPPONENTS": []
+        },
+        "wins": {
+            "SELF": [],
+            "OPPONENTS": []
+        }
+    },
+    "Minotaur": {
+        "godName": "Minotaur",
+        "description": "Bull-headed Monster\nYour Move: Your Worker may move into an opponent Worker's space, if their Worker can be forced one space straight backwards to an unoccupied space at any level.",
+        "movableTimes": 1,
+        "buildableTimes": 1,
+        "events": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "movements": {
+            "SELF": [
+                "MoveOnOpponent",
+                "Bump"
+            ],
+            "OPPONENTS": []
+        },
+        "builds": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "wins": {
+            "SELF": [],
+            "OPPONENTS": []
+        }
+    },
+    "Pan": {
+        "godName": "Pan",
+        "description": "God of the Wild\nWin condition: You also win if your Worker moves down two or more levels.",
+        "movableTimes": 1,
+        "buildableTimes": 1,
+        "events": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "movements": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "builds": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "wins": {
+            "SELF": [
+                "Jump2"
+            ],
+            "OPPONENTS": []
+        }
+    },
+    "Prometheus": {
+        "godName": "Prometheus",
+        "description": "Titan Benefactor of Mankind\nYour Turn: If your Worker does not move up, it may build both before and after moving.",
+        "movableTimes": 1,
+        "buildableTimes": 2,
+        "events": {
+            "SELF": [
+                "CantMoveUp"
+            ],
+            "OPPONENTS": []
+        },
+        "movements": {
+            "SELF": [
+                "MoveAfterBuild",
+                "CantMoveUp"
+            ],
+            "OPPONENTS": []
+        },
+        "builds": {
+            "SELF": [
+                "BuildBeforeMove",
+                "CanBuildAndMove"
+            ],
+            "OPPONENTS": []
+        },
+        "wins": {
+            "SELF": [],
+            "OPPONENTS": []
+        }
+    },
+    "Hera": {
+        "godName": "Hera",
+        "description": "Goddess of Marriage\nOpponent's Turn: An opponent cannot win by moving into a perimeter space",
+        "movableTimes": 1,
+        "buildableTimes": 1,
+        "events": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "movements": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "builds": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "wins": {
+            "SELF": [],
+            "OPPONENTS": [
+                "NotOnPerimeter"
+            ]
+        }
+    },
+    "Hestia": {
+        "godName": "Hestia",
+        "description": "Goddess of Hearth and Home\nYour Worker may build one additional time, but this cannot be on a perimeter space.",
+        "movableTimes": 1,
+        "buildableTimes": 2,
+        "events": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "movements": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "builds": {
+            "SELF": [
+                "NoPerimeterOnSecond"
+            ],
+            "OPPONENTS": []
+        },
+        "wins": {
+            "SELF": [],
+            "OPPONENTS": []
+        }
+    },
+    "Hypnus": {
+        "godName": "Hypnus",
+        "description": "God of Sleep\nStart of Opponent's turn: If one of your opponent's Workers is higher than all of their others, it cannot move",
+        "movableTimes": 1,
+        "buildableTimes": 1,
+        "events": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "movements": {
+            "SELF": [],
+            "OPPONENTS": [
+                "CantMoveHighest"
+            ]
+        },
+        "builds": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "wins": {
+            "SELF": [],
+            "OPPONENTS": []
+        }
+    },
+    "Limus": {
+        "godName": "Limus",
+        "description": "Goddess of Famine\nOpponent's Turn: Opponent Workers cannot build on spaces neighboring your Workers, unless building a dome to create a Complete Tower",
+        "movableTimes": 1,
+        "buildableTimes": 1,
+        "events": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "movements": {
+            "SELF": [],
+            "OPPONENTS": [
+                "CanMoveAndBuild"
+            ]
+        },
+        "builds": {
+            "SELF": [],
+            "OPPONENTS": [
+                "NoBlockNearWorker"
+            ]
+        },
+        "wins": {
+            "SELF": [],
+            "OPPONENTS": []
+        }
+    },
+    "Triton": {
+        "godName": "Triton",
+        "description": "God of the Waves\nEach time your Worker moves into a perimeter space, it may immediately move again.",
+        "movableTimes": 1,
+        "buildableTimes": 1,
+        "events": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "movements": {
+            "SELF": [
+                "IndefinitelyOnPerimeter"
+            ],
+            "OPPONENTS": []
+        },
+        "builds": {
+            "SELF": [],
+            "OPPONENTS": []
+        },
+        "wins": {
+            "SELF": [],
+            "OPPONENTS": []
+        }
+    }
+}

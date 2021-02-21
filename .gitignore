@@ -1,0 +1,4 @@
+.idea/
+/Project_ingsw.iml/
+#ignore all file .class
+*.class

@@ -1,0 +1,48 @@
+@import "Root.css";
+.hbox{
+    -fx-background-image: url("../Images/God_bg.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-background-repeat: stretch;
+}
+
+.label {
+    -fx-font-family: 'LillyBelle';
+    -fx-font-size: 30;
+}
+#lbl_descr {
+    -fx-font-size: 20;
+}
+.list-view {
+    -fx-background-color: transparent;
+}
+.list-cell {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+#anchor_god {
+    -fx-background-image: url("../Images/List_bg.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+}
+
+#anchor-image {
+    -fx-background-image: url("../Images/Gods/Full/Default.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-background-size: 80% 80%;
+}
+
+#hbox_descr {
+    -fx-background-image: url("../Images/Desc_bg.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+}

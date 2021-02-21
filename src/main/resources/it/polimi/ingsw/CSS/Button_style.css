@@ -1,0 +1,16 @@
+.button {
+    -fx-background-image: url('../Images/button-play-normal.png');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 140 140;
+    -fx-background-color: white;
+    -fx-background-radius: 40px;
+}
+
+.button:hover {
+    -fx-background-color: rgba(24, 100, 209, 1);
+}
+
+.button:pressed {
+    -fx-background-image: url('../Images/button-play-pressed.png');
+    -fx-background-color: rgba(19, 78, 163, 1);
+}

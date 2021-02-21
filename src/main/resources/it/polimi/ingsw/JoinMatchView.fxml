@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" styleClass="vbox" stylesheets="@CSS/Welcome_style.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="it.polimi.ingsw.Client.GUI.WelcomeController">
+   <children>
+      <VBox id="vbox_shadow" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" stylesheets="@CSS/Welcome_style.css">
+         <children>
+            <Label alignment="TOP_CENTER" text="Welcome to Santorini GUI Version" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="898.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.8" minWidth="10.0" prefWidth="423.6" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="454.40001831054684" minWidth="10.0" prefWidth="57.19999999999999" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="693.0000305175781" minWidth="10.0" prefWidth="422.6" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="112.8" minHeight="10.0" prefHeight="112.8" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="211.40002479553223" minHeight="10.0" prefHeight="113.2" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="211.40002479553223" minHeight="10.0" prefHeight="117.60000000000002" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="166.0" text="Nickname" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nickField" maxWidth="-Infinity" minHeight="30.0" minWidth="20.0" prefHeight="30.0" prefWidth="295.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+               </children>
+            </GridPane>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="playBtn" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#onPlayPress" prefHeight="140.0" prefWidth="140.0" stylesheets="@CSS/Button_style.css" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

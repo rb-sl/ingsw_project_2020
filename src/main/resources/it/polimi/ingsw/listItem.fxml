@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox id="cell_hbox" fx:id="hbox" stylesheets="@CSS/listItem.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+   <children>
+      <Label fx:id="label" stylesheets="@CSS/God_style.css" text="Label" textFill="#887768" wrapText="true">
+         <font>
+            <Font name="Gill Sans Nova Ultra Bold" size="30.0" />
+         </font></Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</HBox>

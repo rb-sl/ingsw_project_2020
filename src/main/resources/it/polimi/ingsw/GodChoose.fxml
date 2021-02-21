@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" styleClass="hbox" stylesheets="@CSS/God_style.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="it.polimi.ingsw.Client.GUI.GodController">
+   <children>
+      <GridPane alignment="CENTER" prefHeight="622.0" prefWidth="898.0" vgap="5.0" VBox.vgrow="NEVER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="97.40000381469727" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="97.40000381469727" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="430.6" minHeight="10.0" prefHeight="404.6" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="228.40000000000003" minHeight="10.0" prefHeight="141.19999999999993" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lbl_title" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="526.0" text="CHOOSE YOUR FAVOURITE GOD" textFill="#877768" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Gill Sans Ultra Bold" size="36.0" />
+               </font></Label>
+            <GridPane fx:id="grid_god" alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="352.0" prefWidth="900.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="400.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="400.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                   <AnchorPane id="anchor_image" fx:id="anchor_god" maxHeight="419.0" maxWidth="200.0" minHeight="390.0" minWidth="197.0" prefHeight="390.0" prefWidth="197.0" stylesheets="@CSS/God_style.css" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+                     <children>
+                        <ImageView fx:id="img_god" fitHeight="390.0" fitWidth="197.0" layoutX="2.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@Images/Gods/Full/Panel.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <GridPane.margin>
+                        <Insets right="50.0" />
+                     </GridPane.margin></AnchorPane>
+                  <AnchorPane id="anchor_god" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="listView" prefHeight="400.0" prefWidth="400.0" stylesheets="@CSS/God_style.css" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="50.0">
+                           <styleClass>
+                              <String fx:value="list-view" />
+                              <String fx:value="list-cell" />
+                           </styleClass>
+                        </ListView>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin>
+              
+            </GridPane>
+            <HBox id="hbox_descr" prefHeight="100.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <children>
+                  <ScrollPane fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" prefHeight="107.0" prefWidth="710.0" stylesheets="@CSS/God_style.css" HBox.hgrow="NEVER">
+                     <content>
+                        <Label id="lbl_descr" fx:id="lbl_descr" alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" stylesheets="@CSS/God_style.css" text="Description" textAlignment="CENTER" textFill="#887768" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                     </content>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="190.0" right="190.0" top="10.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="scroll-pane" />
+                        <String fx:value="viewport" />
+                     </styleClass>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

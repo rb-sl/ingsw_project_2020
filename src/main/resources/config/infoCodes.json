@@ -1,0 +1,14 @@
+{
+  "NICKNAME": {
+    "text": "Nickname already taken, please choose another one"
+  },
+  "WAIT": {
+    "text": "Please wait for your turn"
+  },
+  "OCCUPIED": {
+    "text": "Cell not free, please choose another one"
+  },
+  "LOSE": {
+    "text": "You lose"
+  }
+}

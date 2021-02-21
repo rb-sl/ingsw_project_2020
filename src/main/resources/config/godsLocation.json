@@ -1,0 +1,62 @@
+{
+  "Apollo": {
+    "full": "Full/Apollo.png",
+    "small": "Small/SmallApollo.png"
+  },
+  "Artemis": {
+    "full": "Full/Artemis.png",
+    "small": "Small/SmallArtemis.png"
+  },
+  "Athena": {
+    "full": "Full/Athena.png",
+    "small": "Small/SmallAthena.png"
+  },
+  "Atlas": {
+    "full": "Full/Atlas.png",
+    "small": "Small/SmallAtlas.png"
+  },
+  "Demeter": {
+    "full": "Full/Demeter.png",
+    "small": "Small/SmallDemeter.png"
+  },
+  "Hephaestus": {
+    "full": "Full/Hephaestus.png",
+    "small": "Small/SmallHephaestus.png"
+  },
+  "Minotaur": {
+    "full": "Full/Minotaur.png",
+    "small": "Small/SmallMinotaur.png"
+  },
+  "Pan": {
+    "full": "Full/Pan.png",
+    "small": "Small/SmallPan.png"
+  },
+  "Prometheus": {
+    "full": "Full/Prometheus.png",
+    "small": "Small/SmallPrometheus.png"
+  },
+  "Hera": {
+    "full": "Full/Hera.png",
+    "small": "Small/SmallHera.png"
+  },
+  "Hestia": {
+    "full": "Full/Hestia.png",
+    "small": "Small/SmallHestia.png"
+  },
+  "Hypnus": {
+    "full": "Full/Hypnus.png",
+    "small": "Small/SmallHypnus.png"
+  },
+  "Limus": {
+    "full": "Full/Limus.png",
+    "small": "Small/SmallLimus.png"
+  },
+  "Triton": {
+    "full": "Full/Triton.png",
+    "small": "Small/SmallTriton.png"
+  },
+  "Default": {
+    "full": "Full/Default.png",
+    "small": "Full/Default.png"
+  }
+}

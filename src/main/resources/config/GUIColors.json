@@ -1,0 +1,32 @@
+{
+  "#00A7E9": {
+    "color": "Blue",
+    "female": "FemaleBlue.png",
+    "male": "MaleBlue.png"
+  },
+  "#9958ff": {
+    "color": "Purple",
+    "female": "FemalePurple.png",
+    "male": "MalePurple.png"
+  },
+  "#FF57D2": {
+    "color": "Pink",
+    "female": "FemalePink.png",
+    "male": "MalePink.png"
+  },
+  "#FF692E": {
+    "color": "Orange",
+    "female": "FemaleOrange.png",
+    "male": "MaleOrange.png"
+  },
+  "#CCC2BB": {
+    "color": "Tanned",
+    "female": "FemaleTanned.png",
+    "male": "MaleTanned.png"
+  },
+  "#E8E8E8": {
+    "color": "White",
+    "female": "FemaleWhite.png",
+    "male": "MaleWhite.png"
+  }
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'LillyBelle';
+    src: url('LillyBelle.ttf');
+}
+
+.label, .button {
+    font-family: 'LillyBelle', serif;
+    font-weight: bold;
+}
