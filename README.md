@@ -11,17 +11,17 @@ The project consists in the Java implementation of the board game [Santorini](ht
 All copyrights on ideas and image resources belong to Spin Master and Roxley Games.
  
 ## Developed functionalities
-| Functionality  | State                                           |
-| :------------- | :---------------------------------------------: |
-| Basic rules    | ![GREEN](https://placehold.it/15/44bb44/44bb44) |
-| Complete rules | ![GREEN](https://placehold.it/15/44bb44/44bb44) |
-| Socket         | ![GREEN](https://placehold.it/15/44bb44/44bb44) |
-| GUI            | ![GREEN](https://placehold.it/15/44bb44/44bb44) |
-| CLI            | ![GREEN](https://placehold.it/15/44bb44/44bb44) |
-| Multiple games |                                                 |
-| Persistence    |                                                 |
-| Advanced Gods  | ![GREEN](https://placehold.it/15/44bb44/44bb44) |
-| Undo           | ![GREEN](https://placehold.it/15/44bb44/44bb44) |
+| Functionality  | State  |
+| :------------- | :----: |
+| Basic rules    | 🟩 |
+| Complete rules | 🟩 |
+| Socket         | 🟩 |
+| GUI            | 🟩 |
+| CLI            | 🟩 |
+| Multiple games |    |
+| Persistence    |     |
+| Advanced Gods  | 🟩 |
+| Undo           | 🟩 |
 
 ## Exam and results
 During the final examination the instructors asked some clarifications about the heartbeat system,
